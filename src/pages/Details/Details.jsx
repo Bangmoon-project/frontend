@@ -57,7 +57,7 @@ const Details = () => {
   if (isLoading) {
     return <LoadingStatus />;
   }
-
+  
   if (isError) {
     return <ErrorStatus />;
   }
