@@ -14,6 +14,7 @@ const Nav = () => {
   const handleLogout = () => {
     Cookies.remove('token');
     setIsLoggedIn(false);
+    navigate('/login');
   };
 
   // login 페이지로 이동
