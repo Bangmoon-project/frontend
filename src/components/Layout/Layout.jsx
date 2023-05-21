@@ -4,6 +4,7 @@ import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import styles from './Layout.module.css';
 import LoginBar from '../Loginbar/LoginBar';
+import { Outlet } from 'react-router-dom';
 
 const Layout = ({ children }) => {
   return (
@@ -13,6 +14,7 @@ const Layout = ({ children }) => {
         <Footer />
         <div className={`${styles.inner} relative`}>
           <LoginBar />
+          <Outlet />
           {children}
           <Nav />
           <div className={`${styles.lt} absolute text-white font-bold`}>
